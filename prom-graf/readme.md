@@ -7,7 +7,6 @@ helm repo add prometheus-community https://prometheus-community.github.io/helm-c
 helm repo update
 
 
-helm install prom-graf prometheus-community/kube-prometheus-stack --namespace monitoring --create-namespace --values values.yaml
-
+helm install prom-graf prometheus-community/kube-prometheus-stack --namespace monitoring --create-namespace
 helm install prom-graf grafana/grafana --namespace monitoring --create-namespace --values values.yaml
 
