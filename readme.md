@@ -27,3 +27,12 @@ helm template strimzi-cluster strimzi-cluster
 ```
 
 
+[cp-helm-charts](cp-helm-charts)
+
+k create ns confluent
+helm install cp-helm-charts ./cp-helm-charts -n confluent
+
+helm delete cp-helm-charts -n confluent
+
+
+[confluent-for-kubernetes](confluent-for-kubernetes)
